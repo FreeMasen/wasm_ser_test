@@ -1,5 +1,5 @@
 
-extern crate ser_test_lib;
+extern crate ser_test;
 extern crate hyper;
 extern crate futures;
 

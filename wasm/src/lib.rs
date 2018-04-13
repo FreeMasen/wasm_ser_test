@@ -1,7 +1,8 @@
 #![feature(proc_macro, wasm_custom_section, wasm_import_module)]
 extern crate wasm_bindgen;
+extern crate ser_test;
 use wasm_bindgen::prelude::*;
-use ser_test_lib::get_res_vec;
+use ser_test::get_res_vec;
 
 #[wasm_bindgen]
 extern {
