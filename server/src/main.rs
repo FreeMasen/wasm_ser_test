@@ -1,5 +1,5 @@
 
-extern crate ser_test_lib;
+extern crate ser_test;
 extern crate hyper;
 extern crate futures;
 
@@ -9,7 +9,7 @@ use hyper::server::{Http, Service, Request, Response};
 use hyper::{Method, StatusCode};
 use hyper::Error;
 use futures::future::{ok, Future};
-use ser_test_lib::get_res_vec;
+use ser_test::get_res_vec;
 
 type HyperResult = Box<Future<Item = Response, Error = Error>>;
 

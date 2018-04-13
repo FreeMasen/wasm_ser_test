@@ -14,6 +14,10 @@ extern {
 
 #[wasm_bindgen]
 pub fn run_test() -> JsValue {
-    let data: Vec<String> = get_res_vec(Box::new(performance.now), "ms");
+    let data: Vec<String> = get_res_vec(Box::new(now), "ms");
     JsValue::from_str(&data.join("\n,"))
+}
+
+fn now() -> f64 {
+    performance::now()
 }
