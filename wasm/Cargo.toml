@@ -1,0 +1,11 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+authors = ["robert masen <r@robertmasen.pizza>"]
+
+[dependencies]
+ser_test = {path = ".."}
+wasm-bindgen = "0.2"
+
+[lib]
+crate-type = ["cdylib"]
